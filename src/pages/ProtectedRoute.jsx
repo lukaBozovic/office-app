@@ -5,13 +5,13 @@ import Sidebar from "../components/sidebar/Sidebar";
 import Navbar from "../components/navbar/Navbar";
 import "../assets/Layout.css"
 
-const ProtectedRoute = ({children, navbarName}) => {
+const ProtectedRoute = ({children}) => {
     if (localStorage.getItem(STORAGE_KEYS.JWT))
         return (
             <div className={"main-layout"}>
                 <Sidebar />
                 <div className={"page-layout"}>
-                    <Navbar name={navbarName}/>
+                    <Navbar />
                     <main>{children}</main>
                 </div>
             </div>

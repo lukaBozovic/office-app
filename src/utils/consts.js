@@ -11,3 +11,4 @@ export const ROUTES = {
 }
 
 export const BASE_URL = "http://192.168.1.96:8080";
+export const PAGINATION_SIZE = 10;

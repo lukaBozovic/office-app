@@ -11,7 +11,7 @@ const Router = () => {
             <Routes>
                 <Route path={ROUTES.login} element={<Login/>}/>
                 <Route path={ROUTES.home} element={<ProtectedRoute> <h1>Komponenta za home</h1></ProtectedRoute>}/>
-                <Route path={ROUTES.users} element={<ProtectedRoute navbarName={"Korisnici"}><Users /></ProtectedRoute>}/>
+                <Route path={ROUTES.users} element={<ProtectedRoute><Users /></ProtectedRoute>}/>
                 <Route path="*" element={<h1>404</h1>}/>
             </Routes>
         </BrowserRouter>

@@ -1,0 +1,7 @@
+.header {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    -webkit-background-clip: text;
+    margin-left: 20px;
+}

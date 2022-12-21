@@ -1,0 +1,17 @@
+.main-layout {
+    display: flex;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-layout {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.page-layout > main {
+    max-height: calc(100vh - 80px);
+    overflow: auto;
+    padding: 100px;
+}
